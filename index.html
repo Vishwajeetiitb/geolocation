@@ -43,7 +43,7 @@
 
             infoWindow.setPosition(pos);
             console.log(pos)
-            infoWindow.setContent('Location found.');
+            infoWindow.setContent(pos);
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
