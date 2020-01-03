@@ -4,6 +4,7 @@
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
 var a =0;
+var b =0;
       var map, infoWindow;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -24,6 +25,7 @@ var a =0;
             };
             document.getElementById("t").value = position.coords.latitude + ", " + position.coords.longitude;
             a = position.coords.latitude;
+            b = position.coords.longitude;
             infoWindow.setPosition(pos); 
             infoWindow.setContent("vishwa");
             console.log(i)
@@ -43,7 +45,8 @@ var a =0;
         
         testRef = database.ref('vishwajeet');
         testRef.set({
-           display: a
+           latitude: a,
+           longitude: b,
           //   moment: now.valueOf()
          });
     
