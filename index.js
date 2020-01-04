@@ -45,8 +45,8 @@ var b = 75.7138884;
         
         testRef = database.ref('vishwajeet');
         testRef.set({
-           lat:  a,
-           lng: b,
+           lat:  b,
+           lng: a,
           //   moment: now.valueOf()
          });
     
