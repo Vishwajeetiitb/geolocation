@@ -45,8 +45,9 @@ var b = 75.7138884;
         
         testRef = database.ref('e-shuttle-raw-gps');
         testRef.set({
+          E1 :{
            lat:  a,
-           lng: b,
+           lng: b,}
           //   moment: now.valueOf()
          });
     
