@@ -43,7 +43,7 @@ var b = 75.7138884;
       
         // firebase.analytics();
         
-        testRef = database.ref('vishwajeet');
+        testRef = database.ref('e-shuttle-raw-gps');
         testRef.set({
            lat:  a,
            lng: b,
